@@ -1,0 +1,20 @@
+.login-block {
+    display: none;
+
+    @media (min-width: 960px) {
+        display: block;
+        margin-top: 30px;
+    }
+  
+    &__user-link {
+        font-size: 16px;
+        line-height: 19px;
+        color: $green;
+        text-decoration: none;
+        outline: none;
+
+        &:hover, &:focus {
+            color: lighten($green, 15);
+        }
+    }
+}

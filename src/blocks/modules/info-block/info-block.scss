@@ -1,0 +1,53 @@
+.info-block {
+    display: none;
+
+    @media (min-width: 960px) {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 0 24px;
+    }
+
+    &__support {
+        margin-bottom: 32px;
+        font-weight: $font-bold;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    &__text {
+        color: $white;
+        margin-bottom: 12px;
+    }
+
+    &__support-link {
+        color: $green;
+        text-decoration: none;
+        outline: none;
+
+        &:hover, &:focus {
+            color: lighten($green, 15);
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 24px;
+        text-decoration: none;
+        color: rgba(232, 234, 235, 0.1);
+        outline: none;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover, &:focus {
+            color: rgba(232, 234, 235, 0.4);
+        }
+    }
+}
