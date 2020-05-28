@@ -9,7 +9,8 @@
     }
 
     &__wrap {
-        overflow: scroll;
+        // overflow: scroll; <-- на случай переполнения
+        height: 100%;
     }
 
     &__nav {
