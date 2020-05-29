@@ -15,10 +15,21 @@
 
     &__nav {
         display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #26313a;
+        padding: 10px 20px;
+        box-shadow: 0 3px 3px 0px #867e7e24;
 
         @media (min-width: 960px) {
             display: block;
+            position: static;
+            padding: 0;
             margin-left: 25px;
+            width: 174px;
+            background-color: transparent;
+            box-shadow: none;
         }
     }
 
@@ -43,8 +54,10 @@
     }
 
     &__item {
+        padding: 15px 0;
     
         @media(min-width: 960px) {
+            padding: 0;
             margin-bottom: 50px;
 
             &:last-child {
@@ -70,11 +83,15 @@
             content: "";
             position: absolute;
             top: -4px;
-            left: -75px;
+            left: -70px;
             width: 4px;
             height: 100%;
             min-height: 30px;
             background: #1e8a61;
+
+            @media(min-width: 960px) {
+                left: -75px;
+            }
         }
 
         &::before {
